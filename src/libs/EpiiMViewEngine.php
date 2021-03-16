@@ -324,9 +324,9 @@ class EpiiMViewEngine implements IEpiiViewEngine
 
     private function parse_tpl(string $tmpfile, string $compile_file)
     {
-        $compile_string = $this->file_get_contents(__DIR__ . '/../view/common/template.php');
-        $compile_string = str_replace($this->config['replace_key'], $this->file_get_contents($tmpfile), $compile_string);
-        $txt = $this->compileString($compile_string);
+        $raw_string = $this->file_get_contents(__DIR__ . '/../view/common/template.php');
+        $raw_string = str_replace($this->config['replace_key'], $this->file_get_contents($tmpfile), $raw_string);
+        $txt = $this->compileString($raw_string);
 
         if (!is_dir($todir = dirname($compile_file))) {
             mkdir($todir, 0777, true);
