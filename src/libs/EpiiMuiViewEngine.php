@@ -12,7 +12,7 @@ use epii\template\View;
  * Date: 2018/12/25
  * Time: 1:19 PM
  */
-class EpiiMViewEngine implements IEpiiViewEngine
+class EpiiMuiViewEngine implements IEpiiViewEngine
 {
     private static $view_parse = [];
 
@@ -324,8 +324,9 @@ class EpiiMViewEngine implements IEpiiViewEngine
 
     private function parse_tpl(string $tmpfile, string $compile_file)
     {
-        $raw_string = $this->file_get_contents(__DIR__ . '/../view/common/template.php');
-        $raw_string = str_replace($this->config['replace_key'], $this->file_get_contents($tmpfile), $raw_string);
+        $raw_string = $this->file_get_contents(__DIR__ . '/../view/common/header.php');
+        $raw_string .= $this->file_get_contents($tmpfile);
+        $raw_string .= $this->file_get_contents(__DIR__ . '/../view/common/footer.php');
         $txt = $this->compileString($raw_string);
 
         if (!is_dir($todir = dirname($compile_file))) {

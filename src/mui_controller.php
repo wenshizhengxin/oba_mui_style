@@ -8,9 +8,9 @@ namespace oba_mui_style;
 
 
 use epii\app\controller;
-use oba_mui_style\libs\trait_set\MTrait;
+use oba_mui_style\libs\trait_set\MuiTrait;
 
 class mui_controller extends controller
 {
-    use MTrait;
+    use MuiTrait;
 }
