@@ -4,7 +4,7 @@
  * Created at 2021/3/23 11:07 by 陈庙琴
  */
 
-namespace oba_mui_style\libs;
+namespace wenshizhengxin\oba_mui_style\libs;
 
 
 class MuiAsset

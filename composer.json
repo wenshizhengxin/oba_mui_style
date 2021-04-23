@@ -10,12 +10,12 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=5.6.0",
+        "php": ">=7.0.0",
         "epii/admin-center": ">=0.0.1"
     },
     "autoload": {
         "psr-4": {
-            "oba_mui_style\\": "src"
+            "wenshizhengxin\\oba_mui_style\\": "src"
         }
     }
 }

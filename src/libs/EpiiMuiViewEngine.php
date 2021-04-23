@@ -1,9 +1,8 @@
 <?php
 
-namespace oba_mui_style\libs;
+namespace wenshizhengxin\oba_mui_style\libs;
 
 use epii\template\i\IEpiiViewEngine;
-use epii\template\View;
 
 
 /**
