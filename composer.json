@@ -11,11 +11,12 @@
     "license": "MIT",
     "require": {
         "php": ">=7.0.0",
-        "epii/admin-center": ">=0.0.1"
+        "epii/tiny-app-plus": ">=0.0.1",
+        "epii/template-engine": ">=0.0.1"
     },
     "autoload": {
         "psr-4": {
-            "wenshizhengxin\\oba_mui_style\\": "src"
+            "wenshizhengxin\\oba_mui_style\\": "src/"
         }
     }
 }
